@@ -5,7 +5,7 @@
 [Milestones 1 or 2](https://milestone-1-to-2-6sg4zjekl-rohan-mirzas-projects.vercel.app)
 
 "# Milestones 3 link"
-[Milestones 3]()
+[Milestones 3](https://milestone-3-r1chtu5j5-rohan-mirzas-projects.vercel.app)
 
 "# Milestones 4 link"
 [Milestones 4]()

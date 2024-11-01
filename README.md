@@ -2,7 +2,7 @@
 [Follow on Linkedin](https://www.linkedin.com/in/muhammad-rohan-mirza/)
 
 "# Milestones 1-2 link"
-[Milestones 1 or 2 link](milestone-1-to-2-liard.vercel.app)
+[Milestones 1 or 2 link](https://milestone-1-to-2-6sg4zjekl-rohan-mirzas-projects.vercel.app)
 
 "# Milestones 3 link"
 [Milestones 3 link]()

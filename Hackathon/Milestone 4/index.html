@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./main.css">
+    <title>Editable Resume Builder</title>
+</head>
+<body>
+    
+        <h1 class="text-center">Editable Resume Builder</h1>
+        <form id="resume-form">
+          <fieldset>
+          <!-- Profile Image Upload Field -->
+            <label for="profileImageUpload">Upload Profile Image:</label>
+            <input type="file" id="profileImageUpload" accept="image/*" />
+  
+            <label for="name">Name:</label>
+            <input type="text"  id="name" autocomplete="name" required/>
+  
+            <label for="address">Address:</label>
+            <textarea id="address" autocomplete="address" required></textarea>
+  
+            <label for="phone">Contact:</label>
+            <input type="tel" id="phone" autocomplete="tel" required/>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" autocomplete="email" required/>
+
+        </fieldset>
+        <fieldset>  
+          <legend>OBJECT</legend>
+            <label for="object">Object:</label>
+            <textarea id="object" autocomplete="organization-title" required></textarea>       
+          </fieldset>  
+          <fieldset>
+            <legend>Personal Informaton:-</legend>
+            <label for="fathername">Father Name:</label>
+            <input type="text" id="fathername" autocomplete="organization-title" required>
+  
+            <label for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" autocomplete="organization-title" required>
+  
+            <label for="cnicno">CNIC No:</label>
+            <input type="number" id="cnicno"  autocomplete="organization-title" required>
+  
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" autocomplete="organization-title" required>
+  
+            <label for="maritalstatus">Marital Status:</label>
+            <input type="text" id="maritalstatus" autocomplete="organization-title" required>
+  
+            <label for="domicileprc">Domicile/PRC:</label>
+            <input type="text" id="domicileprc" autocomplete="organization-title" required>
+  
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" autocomplete="organization-title" required>
+  
+            <label for="language">Language:</label>
+            <input type="text" id="language" autocomplete="organization-title" required>
+          </fieldset>
+  
+          <fieldset>
+            <legend>WORK EXPERIENCE</legend>
+            <label for="workexperience">Work Experience:</label>
+            <textarea id="workexperience" autocomplete="organization-title" required></textarea>
+          </fieldset>
+  
+          <fieldset>
+            <legend>PROFESSIONAL EXPERIENCE</legend>
+            <label for="professionalexperience">Professional Experience:</label>
+            <textarea id="professionalexperience" autocomplete="organization-title" required></textarea>        </div>
+          </fieldset>  
+          <fieldset>
+            <legend>ACADEMIC QUALIFICATION</legend>
+            <label for="academicqualification">Academic Qualification:</label>
+            <textarea id="academicqualification" autocomplete="organization-title" required></textarea>
+          </fieldset>
+  
+          <fieldset>
+            <legend>SKILLs</legend>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" autocomplete="skills" required/>
+          </fieldset>
+  
+          <fieldset>
+            <legend>HOBBIES</legend>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" autocomplete="organization-title" required/>
+          </fieldset>
+  
+          <fieldset>
+            <legend>REFERENCE</legend>
+            <label for="reference">Reference:</label>
+            <input type="text" id="reference" autocomplete="organization-title" required/>
+          </fieldset>
+          <button type="submit">Generate Resume</button>
+     
+      <br>
+      <hr>
+      <!-- dynamic and Editable Resume -->
+    <div class="resume-display" contenteditable="true">
+        <h1>Resume will be Generate Below</h1>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

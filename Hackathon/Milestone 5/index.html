@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shareable Resume Builder</title>
+</head>
+<body>
+  <div class="container">
+        <h1 id="heading">Shareable Resume Builder</h1>
+        <form id="resumeForm">
+          <fieldset>
+          <!-- Profile Image Upload Field -->
+            <label for="photo">Upload Profile Image:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" />
+  
+            <label for="name">Full Name:</label>
+            <input type="text"  id="name" name="name" required/>
+
+            <label for="username">Username:</label>
+            <input type="text"  id="username" placeholder="Username" required/>
+  
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required />
+  
+            <label for="phone">Contact:</label>
+            <input type="tel" id="phone" name="phone" required/>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required/>
+
+        </fieldset>
+        <fieldset>  
+          <legend>OBJECT</legend>
+            <label for="object">Object:</label>
+            <textarea id="object" name="object" required></textarea>       
+          </fieldset>  
+          <fieldset>
+            <legend>Personal Informaton:-</legend>
+            <label for="fathername">Father Name:</label>
+            <input type="text" id="fathername" name="fathername" required>
+  
+            <label for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" required>
+  
+            <label for="cnicno">CNIC No:</label>
+            <input type="tel" id="cnicno" name="cnicno" required>
+  
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" required>
+  
+            <label for="maritalstatus">Marital Status:</label>
+            <input type="text" id="maritalstatus" name="maritalstatus" required>
+  
+            <label for="domicileprc">Domicile/PRC:</label>
+            <input type="text" id="domicileprc" name="domicileprc" required>
+  
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+  
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" required>
+          </fieldset>
+  
+          <fieldset>
+            <legend>WORK EXPERIENCE</legend>
+            <label for="workexperience">Work Experience:</label>
+            <textarea id="workexperience" name="workexperience" required></textarea>
+          </fieldset>
+  
+          <fieldset>
+            <legend>PROFESSIONAL EXPERIENCE</legend>
+            <label for="professionalexperience">Professional Experience:</label>
+            <textarea id="professionalexperience" name="professionalexperience" required></textarea>    
+          </fieldset>  
+          <fieldset>
+            <legend>ACADEMIC QUALIFICATION</legend>
+            <label for="academicqualification">Academic Qualification:</label>
+            <textarea id="academicqualification" name="academicqualification" required></textarea>
+          </fieldset>
+  
+          <fieldset>
+            <legend>SKILLs</legend>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required/>
+          </fieldset>
+  
+          <fieldset>
+            <legend>HOBBIES</legend>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" required/>
+          </fieldset>
+  
+          <fieldset>
+            <legend>REFERENCE</legend>
+            <label for="reference">Reference:</label>
+            <input type="text" id="reference" name="reference" required/>
+          </fieldset>
+          <button type="submit">Generate Resume</button>
+        </form>
+        </div>
+          <br>
+          <hr>
+
+      <!-- generate resume preview -->
+
+    <div id="resumePage" class="resume-page hidden">
+      <div id="resumeContent" class="resume-content">
+
+          <img id="resumePhoto" class="resume-photo" src="" alt="Profile Photo">
+          <h1 id="resumeName"></h1>
+          <p id="resumeAddress"></p>
+          <p id="resumePhone"></p>
+          <p id="resumeEmail"></p>
+          
+          <h2>Object:</h2>
+          <p id="resumeObject"></p>
+
+          <h2>Personal Informaton:</h2>
+          <p id="resumeFatherName"></p>
+          <p id="resumeDateofBirth"></p>
+          <p id="resumeCNICNo"></p>
+          <p id="resumeReligion"></p>
+          <p id="resumeMaritalStatus"></p>
+          <p id="resumeDomicilePRC"></p>
+          <p id="resumeNationality"></p>
+          <p id="resumeLanguage"></p>
+
+
+          <h2>Work Experience:</h2>
+          <p id="resumeWorkExperience"></p>
+
+          <h2>Professional Experience:</h2>
+          <p id="resumeProfessionalExperience"></p>
+
+          <h2>Academic Qualification:</h2>
+          <p id="resumeAcademicqualificationcade"></p>
+
+          <h2>Skills:</h2>
+          <p id="resumeSkills"></p>
+
+          <h2>Hobbies:</h2>
+          <p id="resumeHobbies"></p>
+
+          <h2>Reference:</h2>
+          <p id="resumeReference"></p>
+      </div>
+
+      <button id="editButton">Edit</button>
+      <button id="backButton" onclick="window.location.href='index.html'">Back to Form</button>
+<button id="shareLinkButton" class="btn btn-primary">Share Your Resume</button>
+      <button id="download-pdf">Download PDF</button>
+  </div>
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
